@@ -92,10 +92,53 @@ header.sticky{
 }
 
 
+/* ====================================================== Artikel ====================================================== */
+.img-artikel1{
+    background-image: url(../image/rokok.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-artikel2{
+    background-image: url(../image/sakitleher.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-artikel3{
+    background-image: url(../image/covid.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-lainnya1{
+    background-image: url(../image/infus.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-lainnya2{
+    background-image: url(../image/vitaminD.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-lainnya3{
+    background-image: url(../image/bakteri.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* ====================================================== Responsive ====================================================== */
 @media screen and (max-width : 450px){
     .card-fitur{
         width: 340px ;
         height: 300px ;
     }
+}
+
+@media screen and (max-width : 768px) {
+    
 }

@@ -19,6 +19,12 @@ module.exports = {
       borderRadius: {
         default: "20px",
       },
+      gridTemplateRows: {
+        artikel: "minmax(0,1fr) auto auto",
+      },
+      gridTemplateColumns: {
+        artikel: "1fr 1fr 1fr",
+      },
     },
   },
   plugins: [],

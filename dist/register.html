@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Healer</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body>
+    <section>
+        <div class="flex p-8 relative">
+            <div
+                class="hidden sm:flex basis-2/4 justify-center items-center py-48 xl:py-56 px-10 xl:px-14 bg-primary rounded-default">
+                <img class="w-full" src="./image/img_login.svg" alt="">
+            </div>
+            <div class="flex justify-center z-50 basis-full sm:basis-2/4">
+                <div class="w-full sm:w-auto">
+                    <a href="index.html">
+                        <img class="mb-12" width="50" src="./image/logo.svg" alt="">
+                    </a>
+                    <div class="mb-10">
+                        <h1 class="text-3xl lg:text-[48px] font-semibold">Daftar Akun</h1>
+                        <p class="text-base lg:text-lg text-textgrey">Mari bergabung bersama SkyHealer</p>
+                    </div>
+                    <form action="">
+                        <div class="flex flex-col mb-5">
+                            <label id="email" for="email" class="text-primary text-lg mb-2">Email</label>
+                            <input type="email"
+                                class="max-w-[380px] lg:w-[380px] bg-[#F4F8FF] rounded-default focus:outline-none focus:ring-1 focus:ring-primary p-5 transition-all ease-linear duration-150">
+                        </div>
+                        <div class="flex flex-col mb-5">
+                            <label for="text" class="text-primary text-lg mb-2">Nama</label>
+                            <input type="text"
+                                class="max-w-[380px] lg:w-[380px] bg-[#F4F8FF] rounded-default focus:outline-none focus:ring-1 focus:ring-primary p-5 transition-all ease-linear duration-150">
+                        </div>
+                        <div class="flex flex-col mb-5">
+                            <label for="password" class="text-primary text-lg mb-2">Password</label>
+                            <input type="password"
+                                class="max-w-[380px] lg:w-[380px] bg-[#F4F8FF] rounded-default focus:outline-none focus:ring-1 focus:ring-primary p-5 transition-all ease-linear duration-150">
+                        </div>
+
+                        <div class="mt-12 flex flex-col gap-y-5">
+                            <button
+                                class="text-lg bg-primary text-white p-5 rounded-default w-full transition duration-300 hover:shadow-textgrey shadow-lg hover:scale-105">Daftar</button>
+                            <button class="text-lg p-5 rounded-default w-full border border-primary flex justify-center transition duration-300
+                                gap-x-4 hover:shadow-textgrey shadow-lg hover:scale-105"><img
+                                    src="./image/ikon_google.svg" alt="">Daftar Dengan Google</button>
+                            <p class="text-center">Sudah punya akun? <a href="./login.html"
+                                    class="text-primary border-b border-primary">Login</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

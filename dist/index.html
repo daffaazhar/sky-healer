@@ -5,17 +5,19 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Sky Healer</title>
   <link rel="stylesheet" href="css/output.css" />
   <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
 
   <!-- ====================================================== HEADER DEKSTOP ====================================================== -->
-  <header class="sticky text-gray-600 z-50 shadow-lg shadow-grayscale hidden lg:block bg-white">
+  <header
+    class="sticky text-gray-600 z-50 shadow-[0_6px_60px_0_rgb(198,209,227)] shadow-grayscale  hidden lg:block bg-white">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center ">
-      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="./index.html">
         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink">
           <rect width="50" height="50" fill="url(#pattern0)" />
@@ -30,39 +32,39 @@
         <span class="ml-3 text-2xl">SkyHealer</span>
       </a>
       <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-        <a href="#" class="mr-14 relative text-primary active font-medium">Home</a>
+        <a href="./index.html" class="mr-14 relative text-primary active font-medium">Home</a>
         <a href="#" class="mr-14">Buat Janji</a>
         <a href="#" class="mr-14 ">Cari RS</a>
-        <a href="#" class="">Baca Artikel</a>
+        <a href="./artikel.html" class="">Baca Artikel</a>
       </nav>
-      <a href="" class="inline-flex items-center border border-primary py-3 px-9 rounded-[12px] text-base text-primary
+      <a href="./register.html" class="inline-flex items-center border border-primary py-3 px-9 rounded-[12px] text-base text-primary
         bg-secondary mr-6 transition duration-300 hover:shadow-secondary hover:shadow-md hover:scale-95">Daftar
       </a>
-      <a href="" class="inline-flex items-center border border-primary py-3 px-9 rounded-[12px] text-base text-grayscale
+      <a href="./login.html" class="inline-flex items-center border border-primary py-3 px-9 rounded-[12px] text-base text-grayscale
         bg-primary transition duration-300 hover:shadow-secondary hover:shadow-md hover:scale-95">Login
       </a>
     </div>
   </header>
   <!-- ====================================================== HEADER MOBILE ====================================================== -->
-  <header class="sticky text-gray-600 z-50 shadow-lg shadow-grayscale lg:hidden bg-white">
+  <header class="sticky text-gray-600 z-50 shadow-[0_6px_60px_0_rgb(198,209,227)] shadow-grayscale lg:hidden bg-white">
     <div class="container mx-auto flex flex-wrap p-5 flex-row items-center justify-between">
       <div class="humburger relative transition duration-75 cursor-pointer z-10 mr-3"><span class="line"></span></div>
-      <nav id="sidebar" class="fixed w-3/5 h-screen top-0 -left-2/3 flex flex-col items-end text-base justify-start pt-40 pr-8
+      <nav id="sidebar" class="fixed w-3/5 h-full top-0 -left-2/3 flex flex-col items-end text-base justify-start pt-40 pr-8
         space-y-7 text-dark">
-        <a href="#" class="relative text-primary sm-active font-medium">Home</a>
+        <a href="./index.html" class="relative text-primary sm-active font-medium">Home</a>
         <a href="#" class="">Buat Janji</a>
         <a href="#" class="">Cari RS</a>
-        <a href="#" class="">Baca Artikel</a>
+        <a href="./artikel.html" class="">Baca Artikel</a>
       </nav>
-      <a class="flex title-font font-medium items-center text-gray-900 mr-auto">
+      <a class="flex title-font font-medium items-center text-gray-900 mr-auto" href="./index.html">
         <img src="./image/logo.svg" alt="" srcset="" width="40" height="40">
         <span class="ml-1 sm:ml-3 text-lg sm:text-xl">SkyHealer</span>
       </a>
       <div>
-        <a href="" class="inline-flex items-center border border-primary py-2 sm:py-3 px-5 sm:px-9 sm:mr-3 rounded-[12px] text-sm text-primary
+        <a href="./register.html" class="inline-flex items-center border border-primary py-2 sm:py-3 px-5 sm:px-9 sm:mr-3 rounded-[12px] text-sm text-primary
           bg-secondary transition duration-300 hover:shadow-secondary hover:shadow-md hover:scale-95">Daftar
         </a>
-        <a href="" class="hidden sm:inline-flex items-center border border-primary py-3 px-9 rounded-[12px] text-base text-grayscale
+        <a href="./login.html" class="hidden sm:inline-flex items-center border border-primary py-3 px-9 rounded-[12px] text-base text-grayscale
         bg-primary transition duration-300 hover:shadow-secondary hover:shadow-md hover:scale-95">Login
         </a>
       </div>
@@ -72,16 +74,16 @@
 
 
   <!-- ====================================================== LANDING PAGE ====================================================== -->
-  <section class="container mx-auto relative z-10 px-5 sm:px-5 mt-20 lg:mt-32">
+  <section class="container mx-auto relative z-10 px-5 mt-20 lg:mt-32">
     <div class="flex flex-col sm:flex-row justify-evenly">
       <div class="mb-8">
-        <img src="./image/Group 230.svg" alt="">
+        <img src="./image/home1.svg" alt="">
       </div>
       <div class="">
         <h1 class="text-3xl lg:text-5xl font-semibold tracking-wide max-w-xl">Janji Dokter, Cari RS, Artikel. <span
             class="text-primary">Ringkas</span>
           Tanpa Perlu <span class="text-primary">Ribet.</span></h1>
-        <div class="text-textgrey max-w-lg my-5 lg:my-10 text-sm sm:text-base">
+        <div class="text-textgrey max-w-lg my-5 lg:my-10 text-sm sm:text-base leading-8 tracking-wider">
           Kami menawarkan layanan dan edukasi seputar dunia medis secara ringkas. Akses cepat, tanpa fitur berlebihan.
           Semua dalam <span class="text-primary">beberapa klik.</span>
         </div>
@@ -122,7 +124,7 @@
     </div>
     <div class="flex sm:flex-row flex-col flex-wrap justify-evenly items-center gap-y-10 sm:gap-y-5 lg:gap-y-20 bg-grayscale rounded-default
       py-8">
-      <div
+      <a href=""
         class="flex justify-center items-center card-fitur rounded-default bg-white hover:bg-primary transition duration-300 hover:scale-105 hover:shadow-primary shadow-lg">
         <div class="flex justify-center items-center">
           <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -138,8 +140,8 @@
           </svg>
           <h1 class="font-medium h-max text-2xl lg:text-3xl text-primary ml-6">Janji Dokter</h1>
         </div>
-      </div>
-      <div
+      </a>
+      <a href=""
         class="flex justify-center items-center card-fitur rounded-default bg-white hover:bg-primary transition duration-300 hover:scale-105 hover:shadow-primary shadow-lg">
         <div class="flex justify-center items-center">
           <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -159,8 +161,8 @@
           </svg>
           <h1 class="font-medium h-max text-2xl lg:text-3xl text-primary ml-6">Cari RS</h1>
         </div>
-      </div>
-      <div
+      </a>
+      <a href=""
         class="flex justify-center items-center card-fitur rounded-default bg-white hover:bg-primary transition duration-300 hover:scale-105 hover:shadow-primary shadow-lg">
         <div class="flex justify-center items-center">
           <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -177,13 +179,13 @@
           </svg>
           <h1 class="font-medium h-max text-2xl lg:text-3xl text-primary ml-6">Artikel</h1>
         </div>
-      </div>
+      </a>
     </div>
   </section>
 
   <!-- ====================================================== PERKENALAN SKYHEALER ====================================================== -->
   <section class="container mx-auto mt-28 relative">
-    <svg class="absolute -right-0 xl:-right-20 top-0" width="396" height="150" viewBox="0 0 396 150" fill="none"
+    <svg class="absolute right-0 top-0" width="396" height="150" viewBox="0 0 396 150" fill="none"
       xmlns="http://www.w3.org/2000/svg">
       <rect x="793" width="150" height="793" transform="rotate(90 793 0)" fill="url(#paint0_linear_56_58)" />
       <defs>
@@ -200,7 +202,7 @@
         kebutuhan medis
         kamu yang memprioritaskan aksesibilitas.</p>
     </div>
-    <svg class="absolute -left-0 xl:-left-20 bottom-0" width="398" height="150" viewBox="0 0 398 150" fill="none"
+    <svg class="absolute left-0 bottom-0" width="398" height="150" viewBox="0 0 398 150" fill="none"
       xmlns="http://www.w3.org/2000/svg">
       <rect width="150" height="793" transform="matrix(4.37114e-08 1 1 -4.37114e-08 -395 0)"
         fill="url(#paint0_linear_56_60)" />
@@ -214,11 +216,355 @@
     </svg>
   </section>
 
-  <!-- ====================================================== PERKENALAN SKYHEALER ====================================================== -->
-  <section class="container mx-auto">
-
+  <!-- ====================================================== KEBUTUHAN PENGGUNA ====================================================== -->
+  <section class="container mx-auto px-5 mt-20 lg:mt-32">
+    <div class="flex flex-col sm:flex-row justify-between items-center">
+      <div class="max-w-[400px]">
+        <h1 class="text-3xl lg:text-5xl font-semibold tracking-wide max-w-xl">Keperluan Medis,
+          Tanpa Khawatir.</h1>
+        <div class="text-textgrey my-5 lg:my-10 text-sm sm:text-base leading-8 tracking-wider">
+          SkyHealer memastikan dokter dan RS yang ada sudah legal secara hukum dan bersertifikasi.
+        </div>
+      </div>
+      <div class="mb-8">
+        <img src="./image/home2.svg" alt="">
+      </div>
+    </div>
   </section>
+
+  <!-- ====================================================== KEBUTUHAN PENGGUNA ====================================================== -->
+  <section class="container mx-auto mt-28 px-5">
+    <div class="text-center mb-10">
+      <h1 class="text-dark text-3xl lg:text-5xl font-semibold">Fitur Kami</h1>
+      <p class="text-base lg:text-xl text-textgrey leading-8 tracking-wider mt-10">To the point dan nggak bertele-tele,
+        apalagi sih kelebihan SkyHealer?</p>
+    </div>
+    <div class="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-7">
+      <div class="max-w-[470px] xl:max-w-[585px] bg-grayscale rounded-default p-10">
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="40" r="40" fill="#0957DE" />
+          <path
+            d="M42.1 48.13H38.335C35.875 48.13 33.88 46.06 33.88 43.51C33.88 42.895 34.39 42.385 35.005 42.385C35.62 42.385 36.13 42.895 36.13 43.51C36.13 44.815 37.12 45.88 38.335 45.88H42.1C43.075 45.88 43.885 45.01 43.885 43.96C43.885 42.655 43.42 42.4 42.655 42.13L36.61 40C35.44 39.595 33.865 38.725 33.865 36.04C33.865 33.73 35.68 31.87 37.9 31.87H41.665C44.125 31.87 46.12 33.94 46.12 36.49C46.12 37.105 45.61 37.615 44.995 37.615C44.38 37.615 43.87 37.105 43.87 36.49C43.87 35.185 42.88 34.12 41.665 34.12H37.9C36.925 34.12 36.115 34.99 36.115 36.04C36.115 37.345 36.58 37.6 37.345 37.87L43.39 40C44.56 40.405 46.135 41.275 46.135 43.96C46.12 46.255 44.32 48.13 42.1 48.13Z"
+            fill="white" />
+          <path
+            d="M40 50.125C39.385 50.125 38.875 49.615 38.875 49V31C38.875 30.385 39.385 29.875 40 29.875C40.615 29.875 41.125 30.385 41.125 31V49C41.125 49.615 40.615 50.125 40 50.125Z"
+            fill="white" />
+          <path
+            d="M40 56.125C31.105 56.125 23.875 48.895 23.875 40C23.875 31.105 31.105 23.875 40 23.875C48.895 23.875 56.125 31.105 56.125 40C56.125 48.895 48.895 56.125 40 56.125ZM40 26.125C32.35 26.125 26.125 32.35 26.125 40C26.125 47.65 32.35 53.875 40 53.875C47.65 53.875 53.875 47.65 53.875 40C53.875 32.35 47.65 26.125 40 26.125Z"
+            fill="white" />
+        </svg>
+        <h2 class="text-2xl sm:text-3xl xl:text-4xl font-medium mt-7">Harga Kompetitif</h2>
+        <p class="text-textgrey text-base xl:text-xl mt-3">Harga layanan yang kami tawarkan sangat terjangkau.</p>
+      </div>
+      <div class="order-4 sm:order-1 max-w-[470px] xl:max-w-[585px] bg-primary rounded-default p-8 sm:p-10 xl:p-8">
+        <h2 class="text-2xl xl:text-4xl font-medium text-white text-center">Dipercaya Banyak Orang</h2>
+        <div class="flex flex-wrap gap-4 mt-8">
+          <img class="w-14 xl:w-auto" src="./image/usr_profil1.svg" alt="">
+          <img class="w-14 xl:w-auto" src="./image/usr_profil2.svg" alt="">
+          <img class="w-14 xl:w-auto" src="./image/usr_profil3.svg" alt="">
+          <img class="w-14 xl:w-auto" src="./image/usr_profil4.svg" alt="">
+          <img class="w-14 xl:w-auto" src="./image/usr_profil5.svg" alt="">
+          <img class="w-14 xl:w-auto" src="./image/usr_profil6.svg" alt="">
+          <img class="w-14 xl:w-auto" src="./image/usr_profil7.svg" alt="">
+          <img class="w-14 xl:w-auto" src="./image/usr_profil8.svg" alt="">
+          <img class="w-14 xl:w-auto" src="./image/usr_profil9.svg" alt="">
+          <img class="w-14 xl:w-auto" src="./image/usr_profil10.svg" alt="">
+        </div>
+      </div>
+      <div class="order-2 max-w-[470px] xl:max-w-[585px] bg-grayscale rounded-default p-10">
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="40" r="40" fill="#0957DE" />
+          <path
+            d="M40 41.125C35.245 41.125 31.375 37.255 31.375 32.5C31.375 27.745 35.245 23.875 40 23.875C44.755 23.875 48.625 27.745 48.625 32.5C48.625 37.255 44.755 41.125 40 41.125ZM40 26.125C36.49 26.125 33.625 28.99 33.625 32.5C33.625 36.01 36.49 38.875 40 38.875C43.51 38.875 46.375 36.01 46.375 32.5C46.375 28.99 43.51 26.125 40 26.125Z"
+            fill="white" />
+          <path
+            d="M27.1152 56.125C26.5002 56.125 25.9902 55.615 25.9902 55C25.9902 48.595 32.2752 43.375 40.0002 43.375C41.5152 43.375 43.0002 43.57 44.4402 43.975C45.0402 44.14 45.3852 44.755 45.2202 45.355C45.0552 45.955 44.4402 46.3 43.8402 46.135C42.6102 45.79 41.3202 45.625 40.0002 45.625C33.5202 45.625 28.2402 49.825 28.2402 55C28.2402 55.615 27.7302 56.125 27.1152 56.125Z"
+            fill="white" />
+          <path
+            d="M49 56.125C46.51 56.125 44.17 54.805 42.91 52.66C42.235 51.58 41.875 50.305 41.875 49C41.875 46.81 42.85 44.785 44.545 43.435C45.805 42.43 47.395 41.875 49 41.875C52.93 41.875 56.125 45.07 56.125 49C56.125 50.305 55.765 51.58 55.09 52.675C54.715 53.305 54.235 53.875 53.665 54.355C52.42 55.495 50.755 56.125 49 56.125ZM49 44.125C47.89 44.125 46.84 44.5 45.955 45.205C44.8 46.12 44.125 47.515 44.125 49C44.125 49.885 44.365 50.755 44.83 51.505C45.7 52.975 47.305 53.875 49 53.875C50.185 53.875 51.325 53.44 52.195 52.66C52.585 52.33 52.915 51.94 53.155 51.52C53.635 50.755 53.875 49.885 53.875 49C53.875 46.315 51.685 44.125 49 44.125Z"
+            fill="white" />
+          <path
+            d="M48.1448 51.6101C47.8598 51.6101 47.5748 51.5051 47.3498 51.2801L45.8648 49.7951C45.4298 49.3601 45.4298 48.6401 45.8648 48.2051C46.2998 47.7701 47.0198 47.7701 47.4548 48.2051L48.1748 48.9251L50.5748 46.7051C51.0248 46.2851 51.7448 46.3151 52.1648 46.7651C52.5848 47.2151 52.5548 47.9351 52.1048 48.3551L48.9098 51.3101C48.6848 51.5051 48.4148 51.6101 48.1448 51.6101Z"
+            fill="white" />
+        </svg>
+        <h2 class="text-2xl sm:text-3xl xl:text-4xl font-medium mt-7">Ramah Pengguna</h2>
+        <p class="text-textgrey text-base xl:text-xl mt-3">SkyHealer mudah digunakan dan tidak terbatas perangkat.</p>
+      </div>
+      <div class="order-3 max-w-[470px] xl:max-w-[585px] bg-grayscale rounded-default p-10">
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="40" r="40" fill="#0957DE" />
+          <path
+            d="M40.015 47.5C38.74 47.5 37.45 47.17 36.445 46.525L27.415 40.63C25.735 39.535 24.73 37.69 24.73 35.68C24.73 33.67 25.735 31.825 27.415 30.73L36.46 24.85C38.47 23.545 41.605 23.545 43.6 24.865L52.585 30.76C54.25 31.855 55.255 33.7 55.255 35.695C55.255 37.69 54.25 39.535 52.585 40.63L43.6 46.525C42.595 47.185 41.305 47.5 40.015 47.5ZM40.015 26.125C39.16 26.125 38.305 26.32 37.69 26.74L28.66 32.62C27.61 33.31 26.995 34.42 26.995 35.68C26.995 36.94 27.595 38.05 28.66 38.74L37.69 44.635C38.935 45.445 41.125 45.445 42.37 44.635L51.355 38.74C52.405 38.05 53.005 36.94 53.005 35.68C53.005 34.42 52.405 33.31 51.355 32.62L42.37 26.725C41.74 26.335 40.885 26.125 40.015 26.125Z"
+            fill="white" />
+          <path
+            d="M40 56.125C39.34 56.125 38.665 56.035 38.125 55.855L33.34 54.265C31.075 53.515 29.29 51.04 29.305 48.655L29.32 41.62C29.32 41.005 29.83 40.495 30.445 40.495C31.06 40.495 31.57 41.005 31.57 41.62L31.555 48.655C31.555 50.065 32.725 51.685 34.06 52.135L38.845 53.725C39.445 53.92 40.555 53.92 41.155 53.725L45.94 52.135C47.275 51.685 48.445 50.065 48.445 48.67V41.71C48.445 41.095 48.955 40.585 49.57 40.585C50.185 40.585 50.695 41.095 50.695 41.71V48.67C50.695 51.055 48.925 53.515 46.66 54.28L41.875 55.87C41.335 56.035 40.66 56.125 40 56.125Z"
+            fill="white" />
+          <path
+            d="M54.1 45.625C53.485 45.625 52.975 45.115 52.975 44.5V35.5C52.975 34.885 53.485 34.375 54.1 34.375C54.715 34.375 55.225 34.885 55.225 35.5V44.5C55.225 45.115 54.715 45.625 54.1 45.625Z"
+            fill="white" />
+        </svg>
+        <h2 class="text-2xl sm:text-3xl xl:text-4xl font-medium mt-7">Edukatif</h2>
+        <p class="text-textgrey text-base xl:text-xl mt-3">Tambah wawasan anda melalui fitur artikel secara gratis.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================== CAROUSEL ====================================================== -->
+  <section class="w-full bg-primary">
+    <!-- Slider main container -->
+    <div class="swiper mt-36">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide flex flex-col justify-center items-center text-center py-10 px-10 sm:px-20">
+          <h1 class="text-3xl lg:text-5xl font-medium text-white">SkyHealer mudah digunakan, sangat membantu dalam
+            keadaan
+            darurat.
+          </h1>
+          <div class="text-white mt-10">
+            <img class="mb-10 mx-auto" src="./image/usr_carousel.svg" alt="">
+            <h2 class="text-xl font-semibold mb-[15px]">Karim Aaliyah</h2>
+            <p class="mb-6">Masyarakat Kota Surabaya</p>
+            <div class="flex gap-x-4 justify-center">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.78333 13.3333C4.875 12.925 4.70833 12.3416 4.41667 12.05L2.39167 10.025C1.75833 9.39163 1.50833 8.71663 1.69167 8.13329C1.88333 7.54996 2.475 7.14996 3.35833 6.99996L5.95833 6.56663C6.33333 6.49996 6.79167 6.16663 6.96667 5.82496L8.4 2.94996C8.81667 2.12496 9.38333 1.66663 10 1.66663C10.6167 1.66663 11.1833 2.12496 11.6 2.94996L13.0333 5.82496C13.1417 6.04163 13.3667 6.24996 13.6083 6.39163L4.63333 15.3666C4.51667 15.4833 4.31667 15.375 4.35 15.2083L4.78333 13.3333Z"
+                  fill="#FABF68" />
+                <path
+                  d="M15.5833 12.05C15.2833 12.35 15.1167 12.925 15.2167 13.3333L15.7917 15.8416C16.0333 16.8833 15.8833 17.6666 15.3667 18.0416C15.1583 18.1916 14.9083 18.2666 14.6167 18.2666C14.1917 18.2666 13.6917 18.1083 13.1417 17.7833L10.7 16.3333C10.3167 16.1083 9.68334 16.1083 9.3 16.3333L6.85834 17.7833C5.93334 18.325 5.14167 18.4166 4.63334 18.0416C4.44167 17.9 4.3 17.7083 4.20834 17.4583L14.3417 7.32496C14.725 6.94162 15.2667 6.76662 15.7917 6.85829L16.6333 6.99995C17.5167 7.14995 18.1083 7.54996 18.3 8.13329C18.4833 8.71662 18.2333 9.39162 17.6 10.025L15.5833 12.05Z"
+                  fill="#FABF68" />
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.78333 13.3333C4.875 12.925 4.70833 12.3416 4.41667 12.05L2.39167 10.025C1.75833 9.39163 1.50833 8.71663 1.69167 8.13329C1.88333 7.54996 2.475 7.14996 3.35833 6.99996L5.95833 6.56663C6.33333 6.49996 6.79167 6.16663 6.96667 5.82496L8.4 2.94996C8.81667 2.12496 9.38333 1.66663 10 1.66663C10.6167 1.66663 11.1833 2.12496 11.6 2.94996L13.0333 5.82496C13.1417 6.04163 13.3667 6.24996 13.6083 6.39163L4.63333 15.3666C4.51667 15.4833 4.31667 15.375 4.35 15.2083L4.78333 13.3333Z"
+                  fill="#FABF68" />
+                <path
+                  d="M15.5833 12.05C15.2833 12.35 15.1167 12.925 15.2167 13.3333L15.7917 15.8416C16.0333 16.8833 15.8833 17.6666 15.3667 18.0416C15.1583 18.1916 14.9083 18.2666 14.6167 18.2666C14.1917 18.2666 13.6917 18.1083 13.1417 17.7833L10.7 16.3333C10.3167 16.1083 9.68334 16.1083 9.3 16.3333L6.85834 17.7833C5.93334 18.325 5.14167 18.4166 4.63334 18.0416C4.44167 17.9 4.3 17.7083 4.20834 17.4583L14.3417 7.32496C14.725 6.94162 15.2667 6.76662 15.7917 6.85829L16.6333 6.99995C17.5167 7.14995 18.1083 7.54996 18.3 8.13329C18.4833 8.71662 18.2333 9.39162 17.6 10.025L15.5833 12.05Z"
+                  fill="#FABF68" />
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.78333 13.3333C4.875 12.925 4.70833 12.3416 4.41667 12.05L2.39167 10.025C1.75833 9.39163 1.50833 8.71663 1.69167 8.13329C1.88333 7.54996 2.475 7.14996 3.35833 6.99996L5.95833 6.56663C6.33333 6.49996 6.79167 6.16663 6.96667 5.82496L8.4 2.94996C8.81667 2.12496 9.38333 1.66663 10 1.66663C10.6167 1.66663 11.1833 2.12496 11.6 2.94996L13.0333 5.82496C13.1417 6.04163 13.3667 6.24996 13.6083 6.39163L4.63333 15.3666C4.51667 15.4833 4.31667 15.375 4.35 15.2083L4.78333 13.3333Z"
+                  fill="#FABF68" />
+                <path
+                  d="M15.5833 12.05C15.2833 12.35 15.1167 12.925 15.2167 13.3333L15.7917 15.8416C16.0333 16.8833 15.8833 17.6666 15.3667 18.0416C15.1583 18.1916 14.9083 18.2666 14.6167 18.2666C14.1917 18.2666 13.6917 18.1083 13.1417 17.7833L10.7 16.3333C10.3167 16.1083 9.68334 16.1083 9.3 16.3333L6.85834 17.7833C5.93334 18.325 5.14167 18.4166 4.63334 18.0416C4.44167 17.9 4.3 17.7083 4.20834 17.4583L14.3417 7.32496C14.725 6.94162 15.2667 6.76662 15.7917 6.85829L16.6333 6.99995C17.5167 7.14995 18.1083 7.54996 18.3 8.13329C18.4833 8.71662 18.2333 9.39162 17.6 10.025L15.5833 12.05Z"
+                  fill="#FABF68" />
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.78333 13.3333C4.875 12.925 4.70833 12.3416 4.41667 12.05L2.39167 10.025C1.75833 9.39163 1.50833 8.71663 1.69167 8.13329C1.88333 7.54996 2.475 7.14996 3.35833 6.99996L5.95833 6.56663C6.33333 6.49996 6.79167 6.16663 6.96667 5.82496L8.4 2.94996C8.81667 2.12496 9.38333 1.66663 10 1.66663C10.6167 1.66663 11.1833 2.12496 11.6 2.94996L13.0333 5.82496C13.1417 6.04163 13.3667 6.24996 13.6083 6.39163L4.63333 15.3666C4.51667 15.4833 4.31667 15.375 4.35 15.2083L4.78333 13.3333Z"
+                  fill="#FABF68" />
+                <path
+                  d="M15.5833 12.05C15.2833 12.35 15.1167 12.925 15.2167 13.3333L15.7917 15.8416C16.0333 16.8833 15.8833 17.6666 15.3667 18.0416C15.1583 18.1916 14.9083 18.2666 14.6167 18.2666C14.1917 18.2666 13.6917 18.1083 13.1417 17.7833L10.7 16.3333C10.3167 16.1083 9.68334 16.1083 9.3 16.3333L6.85834 17.7833C5.93334 18.325 5.14167 18.4166 4.63334 18.0416C4.44167 17.9 4.3 17.7083 4.20834 17.4583L14.3417 7.32496C14.725 6.94162 15.2667 6.76662 15.7917 6.85829L16.6333 6.99995C17.5167 7.14995 18.1083 7.54996 18.3 8.13329C18.4833 8.71662 18.2333 9.39162 17.6 10.025L15.5833 12.05Z"
+                  fill="#FABF68" />
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.78333 13.3333C4.875 12.925 4.70833 12.3416 4.41667 12.05L2.39167 10.025C1.75833 9.39163 1.50833 8.71663 1.69167 8.13329C1.88333 7.54996 2.475 7.14996 3.35833 6.99996L5.95833 6.56663C6.33333 6.49996 6.79167 6.16663 6.96667 5.82496L8.4 2.94996C8.81667 2.12496 9.38333 1.66663 10 1.66663C10.6167 1.66663 11.1833 2.12496 11.6 2.94996L13.0333 5.82496C13.1417 6.04163 13.3667 6.24996 13.6083 6.39163L4.63333 15.3666C4.51667 15.4833 4.31667 15.375 4.35 15.2083L4.78333 13.3333Z"
+                  fill="#FABF68" />
+                <path
+                  d="M15.5833 12.05C15.2833 12.35 15.1167 12.925 15.2167 13.3333L15.7917 15.8416C16.0333 16.8833 15.8833 17.6666 15.3667 18.0416C15.1583 18.1916 14.9083 18.2666 14.6167 18.2666C14.1917 18.2666 13.6917 18.1083 13.1417 17.7833L10.7 16.3333C10.3167 16.1083 9.68334 16.1083 9.3 16.3333L6.85834 17.7833C5.93334 18.325 5.14167 18.4166 4.63334 18.0416C4.44167 17.9 4.3 17.7083 4.20834 17.4583L14.3417 7.32496C14.725 6.94162 15.2667 6.76662 15.7917 6.85829L16.6333 6.99995C17.5167 7.14995 18.1083 7.54996 18.3 8.13329C18.4833 8.71662 18.2333 9.39162 17.6 10.025L15.5833 12.05Z"
+                  fill="#FABF68" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide flex flex-col justify-center items-center text-center py-10 px-10 sm:px-20">
+          <h1 class="text-3xl lg:text-5xl font-medium text-white">SkyHealer mudah digunakan, sangat membantu dalam
+            keadaan
+            darurat.
+          </h1>
+          <div class="text-white mt-10">
+            <img class="mb-10 mx-auto" src="./image/usr_carousel.svg" alt="">
+            <h2 class="text-xl font-semibold mb-[15px]">Karim Aaliyah</h2>
+            <p class="mb-6">Masyarakat Kota Surabaya</p>
+            <div class="flex gap-x-4 justify-center">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.78333 13.3333C4.875 12.925 4.70833 12.3416 4.41667 12.05L2.39167 10.025C1.75833 9.39163 1.50833 8.71663 1.69167 8.13329C1.88333 7.54996 2.475 7.14996 3.35833 6.99996L5.95833 6.56663C6.33333 6.49996 6.79167 6.16663 6.96667 5.82496L8.4 2.94996C8.81667 2.12496 9.38333 1.66663 10 1.66663C10.6167 1.66663 11.1833 2.12496 11.6 2.94996L13.0333 5.82496C13.1417 6.04163 13.3667 6.24996 13.6083 6.39163L4.63333 15.3666C4.51667 15.4833 4.31667 15.375 4.35 15.2083L4.78333 13.3333Z"
+                  fill="#FABF68" />
+                <path
+                  d="M15.5833 12.05C15.2833 12.35 15.1167 12.925 15.2167 13.3333L15.7917 15.8416C16.0333 16.8833 15.8833 17.6666 15.3667 18.0416C15.1583 18.1916 14.9083 18.2666 14.6167 18.2666C14.1917 18.2666 13.6917 18.1083 13.1417 17.7833L10.7 16.3333C10.3167 16.1083 9.68334 16.1083 9.3 16.3333L6.85834 17.7833C5.93334 18.325 5.14167 18.4166 4.63334 18.0416C4.44167 17.9 4.3 17.7083 4.20834 17.4583L14.3417 7.32496C14.725 6.94162 15.2667 6.76662 15.7917 6.85829L16.6333 6.99995C17.5167 7.14995 18.1083 7.54996 18.3 8.13329C18.4833 8.71662 18.2333 9.39162 17.6 10.025L15.5833 12.05Z"
+                  fill="#FABF68" />
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.78333 13.3333C4.875 12.925 4.70833 12.3416 4.41667 12.05L2.39167 10.025C1.75833 9.39163 1.50833 8.71663 1.69167 8.13329C1.88333 7.54996 2.475 7.14996 3.35833 6.99996L5.95833 6.56663C6.33333 6.49996 6.79167 6.16663 6.96667 5.82496L8.4 2.94996C8.81667 2.12496 9.38333 1.66663 10 1.66663C10.6167 1.66663 11.1833 2.12496 11.6 2.94996L13.0333 5.82496C13.1417 6.04163 13.3667 6.24996 13.6083 6.39163L4.63333 15.3666C4.51667 15.4833 4.31667 15.375 4.35 15.2083L4.78333 13.3333Z"
+                  fill="#FABF68" />
+                <path
+                  d="M15.5833 12.05C15.2833 12.35 15.1167 12.925 15.2167 13.3333L15.7917 15.8416C16.0333 16.8833 15.8833 17.6666 15.3667 18.0416C15.1583 18.1916 14.9083 18.2666 14.6167 18.2666C14.1917 18.2666 13.6917 18.1083 13.1417 17.7833L10.7 16.3333C10.3167 16.1083 9.68334 16.1083 9.3 16.3333L6.85834 17.7833C5.93334 18.325 5.14167 18.4166 4.63334 18.0416C4.44167 17.9 4.3 17.7083 4.20834 17.4583L14.3417 7.32496C14.725 6.94162 15.2667 6.76662 15.7917 6.85829L16.6333 6.99995C17.5167 7.14995 18.1083 7.54996 18.3 8.13329C18.4833 8.71662 18.2333 9.39162 17.6 10.025L15.5833 12.05Z"
+                  fill="#FABF68" />
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.78333 13.3333C4.875 12.925 4.70833 12.3416 4.41667 12.05L2.39167 10.025C1.75833 9.39163 1.50833 8.71663 1.69167 8.13329C1.88333 7.54996 2.475 7.14996 3.35833 6.99996L5.95833 6.56663C6.33333 6.49996 6.79167 6.16663 6.96667 5.82496L8.4 2.94996C8.81667 2.12496 9.38333 1.66663 10 1.66663C10.6167 1.66663 11.1833 2.12496 11.6 2.94996L13.0333 5.82496C13.1417 6.04163 13.3667 6.24996 13.6083 6.39163L4.63333 15.3666C4.51667 15.4833 4.31667 15.375 4.35 15.2083L4.78333 13.3333Z"
+                  fill="#FABF68" />
+                <path
+                  d="M15.5833 12.05C15.2833 12.35 15.1167 12.925 15.2167 13.3333L15.7917 15.8416C16.0333 16.8833 15.8833 17.6666 15.3667 18.0416C15.1583 18.1916 14.9083 18.2666 14.6167 18.2666C14.1917 18.2666 13.6917 18.1083 13.1417 17.7833L10.7 16.3333C10.3167 16.1083 9.68334 16.1083 9.3 16.3333L6.85834 17.7833C5.93334 18.325 5.14167 18.4166 4.63334 18.0416C4.44167 17.9 4.3 17.7083 4.20834 17.4583L14.3417 7.32496C14.725 6.94162 15.2667 6.76662 15.7917 6.85829L16.6333 6.99995C17.5167 7.14995 18.1083 7.54996 18.3 8.13329C18.4833 8.71662 18.2333 9.39162 17.6 10.025L15.5833 12.05Z"
+                  fill="#FABF68" />
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.78333 13.3333C4.875 12.925 4.70833 12.3416 4.41667 12.05L2.39167 10.025C1.75833 9.39163 1.50833 8.71663 1.69167 8.13329C1.88333 7.54996 2.475 7.14996 3.35833 6.99996L5.95833 6.56663C6.33333 6.49996 6.79167 6.16663 6.96667 5.82496L8.4 2.94996C8.81667 2.12496 9.38333 1.66663 10 1.66663C10.6167 1.66663 11.1833 2.12496 11.6 2.94996L13.0333 5.82496C13.1417 6.04163 13.3667 6.24996 13.6083 6.39163L4.63333 15.3666C4.51667 15.4833 4.31667 15.375 4.35 15.2083L4.78333 13.3333Z"
+                  fill="#FABF68" />
+                <path
+                  d="M15.5833 12.05C15.2833 12.35 15.1167 12.925 15.2167 13.3333L15.7917 15.8416C16.0333 16.8833 15.8833 17.6666 15.3667 18.0416C15.1583 18.1916 14.9083 18.2666 14.6167 18.2666C14.1917 18.2666 13.6917 18.1083 13.1417 17.7833L10.7 16.3333C10.3167 16.1083 9.68334 16.1083 9.3 16.3333L6.85834 17.7833C5.93334 18.325 5.14167 18.4166 4.63334 18.0416C4.44167 17.9 4.3 17.7083 4.20834 17.4583L14.3417 7.32496C14.725 6.94162 15.2667 6.76662 15.7917 6.85829L16.6333 6.99995C17.5167 7.14995 18.1083 7.54996 18.3 8.13329C18.4833 8.71662 18.2333 9.39162 17.6 10.025L15.5833 12.05Z"
+                  fill="#FABF68" />
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.78333 13.3333C4.875 12.925 4.70833 12.3416 4.41667 12.05L2.39167 10.025C1.75833 9.39163 1.50833 8.71663 1.69167 8.13329C1.88333 7.54996 2.475 7.14996 3.35833 6.99996L5.95833 6.56663C6.33333 6.49996 6.79167 6.16663 6.96667 5.82496L8.4 2.94996C8.81667 2.12496 9.38333 1.66663 10 1.66663C10.6167 1.66663 11.1833 2.12496 11.6 2.94996L13.0333 5.82496C13.1417 6.04163 13.3667 6.24996 13.6083 6.39163L4.63333 15.3666C4.51667 15.4833 4.31667 15.375 4.35 15.2083L4.78333 13.3333Z"
+                  fill="#FABF68" />
+                <path
+                  d="M15.5833 12.05C15.2833 12.35 15.1167 12.925 15.2167 13.3333L15.7917 15.8416C16.0333 16.8833 15.8833 17.6666 15.3667 18.0416C15.1583 18.1916 14.9083 18.2666 14.6167 18.2666C14.1917 18.2666 13.6917 18.1083 13.1417 17.7833L10.7 16.3333C10.3167 16.1083 9.68334 16.1083 9.3 16.3333L6.85834 17.7833C5.93334 18.325 5.14167 18.4166 4.63334 18.0416C4.44167 17.9 4.3 17.7083 4.20834 17.4583L14.3417 7.32496C14.725 6.94162 15.2667 6.76662 15.7917 6.85829L16.6333 6.99995C17.5167 7.14995 18.1083 7.54996 18.3 8.13329C18.4833 8.71662 18.2333 9.39162 17.6 10.025L15.5833 12.05Z"
+                  fill="#FABF68" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide flex flex-col justify-center items-center text-center py-10 px-10 sm:px-20">
+          <h1 class="text-3xl lg:text-5xl font-medium text-white">SkyHealer mudah digunakan, sangat membantu dalam
+            keadaan
+            darurat.
+          </h1>
+          <div class="text-white mt-10">
+            <img class="mb-10 mx-auto" src="./image/usr_carousel.svg" alt="">
+            <h2 class="text-xl font-semibold mb-[15px]">Karim Aaliyah</h2>
+            <p class="mb-6">Masyarakat Kota Surabaya</p>
+            <div class="flex gap-x-4 justify-center">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.78333 13.3333C4.875 12.925 4.70833 12.3416 4.41667 12.05L2.39167 10.025C1.75833 9.39163 1.50833 8.71663 1.69167 8.13329C1.88333 7.54996 2.475 7.14996 3.35833 6.99996L5.95833 6.56663C6.33333 6.49996 6.79167 6.16663 6.96667 5.82496L8.4 2.94996C8.81667 2.12496 9.38333 1.66663 10 1.66663C10.6167 1.66663 11.1833 2.12496 11.6 2.94996L13.0333 5.82496C13.1417 6.04163 13.3667 6.24996 13.6083 6.39163L4.63333 15.3666C4.51667 15.4833 4.31667 15.375 4.35 15.2083L4.78333 13.3333Z"
+                  fill="#FABF68" />
+                <path
+                  d="M15.5833 12.05C15.2833 12.35 15.1167 12.925 15.2167 13.3333L15.7917 15.8416C16.0333 16.8833 15.8833 17.6666 15.3667 18.0416C15.1583 18.1916 14.9083 18.2666 14.6167 18.2666C14.1917 18.2666 13.6917 18.1083 13.1417 17.7833L10.7 16.3333C10.3167 16.1083 9.68334 16.1083 9.3 16.3333L6.85834 17.7833C5.93334 18.325 5.14167 18.4166 4.63334 18.0416C4.44167 17.9 4.3 17.7083 4.20834 17.4583L14.3417 7.32496C14.725 6.94162 15.2667 6.76662 15.7917 6.85829L16.6333 6.99995C17.5167 7.14995 18.1083 7.54996 18.3 8.13329C18.4833 8.71662 18.2333 9.39162 17.6 10.025L15.5833 12.05Z"
+                  fill="#FABF68" />
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.78333 13.3333C4.875 12.925 4.70833 12.3416 4.41667 12.05L2.39167 10.025C1.75833 9.39163 1.50833 8.71663 1.69167 8.13329C1.88333 7.54996 2.475 7.14996 3.35833 6.99996L5.95833 6.56663C6.33333 6.49996 6.79167 6.16663 6.96667 5.82496L8.4 2.94996C8.81667 2.12496 9.38333 1.66663 10 1.66663C10.6167 1.66663 11.1833 2.12496 11.6 2.94996L13.0333 5.82496C13.1417 6.04163 13.3667 6.24996 13.6083 6.39163L4.63333 15.3666C4.51667 15.4833 4.31667 15.375 4.35 15.2083L4.78333 13.3333Z"
+                  fill="#FABF68" />
+                <path
+                  d="M15.5833 12.05C15.2833 12.35 15.1167 12.925 15.2167 13.3333L15.7917 15.8416C16.0333 16.8833 15.8833 17.6666 15.3667 18.0416C15.1583 18.1916 14.9083 18.2666 14.6167 18.2666C14.1917 18.2666 13.6917 18.1083 13.1417 17.7833L10.7 16.3333C10.3167 16.1083 9.68334 16.1083 9.3 16.3333L6.85834 17.7833C5.93334 18.325 5.14167 18.4166 4.63334 18.0416C4.44167 17.9 4.3 17.7083 4.20834 17.4583L14.3417 7.32496C14.725 6.94162 15.2667 6.76662 15.7917 6.85829L16.6333 6.99995C17.5167 7.14995 18.1083 7.54996 18.3 8.13329C18.4833 8.71662 18.2333 9.39162 17.6 10.025L15.5833 12.05Z"
+                  fill="#FABF68" />
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.78333 13.3333C4.875 12.925 4.70833 12.3416 4.41667 12.05L2.39167 10.025C1.75833 9.39163 1.50833 8.71663 1.69167 8.13329C1.88333 7.54996 2.475 7.14996 3.35833 6.99996L5.95833 6.56663C6.33333 6.49996 6.79167 6.16663 6.96667 5.82496L8.4 2.94996C8.81667 2.12496 9.38333 1.66663 10 1.66663C10.6167 1.66663 11.1833 2.12496 11.6 2.94996L13.0333 5.82496C13.1417 6.04163 13.3667 6.24996 13.6083 6.39163L4.63333 15.3666C4.51667 15.4833 4.31667 15.375 4.35 15.2083L4.78333 13.3333Z"
+                  fill="#FABF68" />
+                <path
+                  d="M15.5833 12.05C15.2833 12.35 15.1167 12.925 15.2167 13.3333L15.7917 15.8416C16.0333 16.8833 15.8833 17.6666 15.3667 18.0416C15.1583 18.1916 14.9083 18.2666 14.6167 18.2666C14.1917 18.2666 13.6917 18.1083 13.1417 17.7833L10.7 16.3333C10.3167 16.1083 9.68334 16.1083 9.3 16.3333L6.85834 17.7833C5.93334 18.325 5.14167 18.4166 4.63334 18.0416C4.44167 17.9 4.3 17.7083 4.20834 17.4583L14.3417 7.32496C14.725 6.94162 15.2667 6.76662 15.7917 6.85829L16.6333 6.99995C17.5167 7.14995 18.1083 7.54996 18.3 8.13329C18.4833 8.71662 18.2333 9.39162 17.6 10.025L15.5833 12.05Z"
+                  fill="#FABF68" />
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.78333 13.3333C4.875 12.925 4.70833 12.3416 4.41667 12.05L2.39167 10.025C1.75833 9.39163 1.50833 8.71663 1.69167 8.13329C1.88333 7.54996 2.475 7.14996 3.35833 6.99996L5.95833 6.56663C6.33333 6.49996 6.79167 6.16663 6.96667 5.82496L8.4 2.94996C8.81667 2.12496 9.38333 1.66663 10 1.66663C10.6167 1.66663 11.1833 2.12496 11.6 2.94996L13.0333 5.82496C13.1417 6.04163 13.3667 6.24996 13.6083 6.39163L4.63333 15.3666C4.51667 15.4833 4.31667 15.375 4.35 15.2083L4.78333 13.3333Z"
+                  fill="#FABF68" />
+                <path
+                  d="M15.5833 12.05C15.2833 12.35 15.1167 12.925 15.2167 13.3333L15.7917 15.8416C16.0333 16.8833 15.8833 17.6666 15.3667 18.0416C15.1583 18.1916 14.9083 18.2666 14.6167 18.2666C14.1917 18.2666 13.6917 18.1083 13.1417 17.7833L10.7 16.3333C10.3167 16.1083 9.68334 16.1083 9.3 16.3333L6.85834 17.7833C5.93334 18.325 5.14167 18.4166 4.63334 18.0416C4.44167 17.9 4.3 17.7083 4.20834 17.4583L14.3417 7.32496C14.725 6.94162 15.2667 6.76662 15.7917 6.85829L16.6333 6.99995C17.5167 7.14995 18.1083 7.54996 18.3 8.13329C18.4833 8.71662 18.2333 9.39162 17.6 10.025L15.5833 12.05Z"
+                  fill="#FABF68" />
+              </svg>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.78333 13.3333C4.875 12.925 4.70833 12.3416 4.41667 12.05L2.39167 10.025C1.75833 9.39163 1.50833 8.71663 1.69167 8.13329C1.88333 7.54996 2.475 7.14996 3.35833 6.99996L5.95833 6.56663C6.33333 6.49996 6.79167 6.16663 6.96667 5.82496L8.4 2.94996C8.81667 2.12496 9.38333 1.66663 10 1.66663C10.6167 1.66663 11.1833 2.12496 11.6 2.94996L13.0333 5.82496C13.1417 6.04163 13.3667 6.24996 13.6083 6.39163L4.63333 15.3666C4.51667 15.4833 4.31667 15.375 4.35 15.2083L4.78333 13.3333Z"
+                  fill="#FABF68" />
+                <path
+                  d="M15.5833 12.05C15.2833 12.35 15.1167 12.925 15.2167 13.3333L15.7917 15.8416C16.0333 16.8833 15.8833 17.6666 15.3667 18.0416C15.1583 18.1916 14.9083 18.2666 14.6167 18.2666C14.1917 18.2666 13.6917 18.1083 13.1417 17.7833L10.7 16.3333C10.3167 16.1083 9.68334 16.1083 9.3 16.3333L6.85834 17.7833C5.93334 18.325 5.14167 18.4166 4.63334 18.0416C4.44167 17.9 4.3 17.7083 4.20834 17.4583L14.3417 7.32496C14.725 6.94162 15.2667 6.76662 15.7917 6.85829L16.6333 6.99995C17.5167 7.14995 18.1083 7.54996 18.3 8.13329C18.4833 8.71662 18.2333 9.39162 17.6 10.025L15.5833 12.05Z"
+                  fill="#FABF68" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+  </section>
+
+
+  <!-- ====================================================== FOOTER ====================================================== -->
+  <footer class="py-16">
+    <div class="container mx-auto flex flex-row flex-wrap px-5">
+      <div class="mb-14 w-1/2 flex-col gap-y-4 md:w-1/3 lg:mb-0 lg:w-1/5">
+        <h3 class="mb-4 text-2xl font-semibold">SkyHealer</h3>
+        <div class="flex flex-col gap-y-4">
+          <p>info@skyhealer.com</p>
+          <p>+62 812 3456 7890</p>
+          <div class="flex gap-x-5">
+            <span>
+              <img src="./image/image 5.svg" alt="" />
+            </span>
+            <span>
+              <img src="./image/image 6.svg" alt="" />
+            </span>
+            <span>
+              <img src="./image/image 7.svg" alt="" />
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="mb-14 w-1/2 md:w-1/3 lg:mb-0 lg:w-1/5">
+        <h3 class="mb-4 text-xl font-semibold">Blog</h3>
+        <div class="flex flex-col gap-y-4">
+          <p>Perusahaan</p>
+          <p>Karir</p>
+          <p>Cara Kerja</p>
+        </div>
+      </div>
+      <div class="mb-14 w-1/2 md:w-1/3 lg:mb-0 lg:w-1/5">
+        <h3 class="mb-4 text-xl font-semibold">Tentang</h3>
+        <div class="flex flex-col gap-y-4">
+          <p>Kontak</p>
+          <p>Tentang Kami</p>
+          <p>FAQ</p>
+          <p>Tim Kami</p>
+          <p>Syarat Layanan</p>
+        </div>
+      </div>
+      <div class="mb-14 w-1/2 md:w-1/3 lg:mb-0 lg:w-1/5">
+        <h3 class="mb-4 text-xl font-semibold">Produk</h3>
+        <div class="flex flex-col gap-y-4">
+          <a href="">Janji Dokter</a>
+          <a href="">Cari RS</a>
+          <a href="./artikel.html">Baca Artikel</a>
+        </div>
+      </div>
+      <div class="mb-14 w-1/2 md:w-1/3 lg:mb-0 lg:w-1/5">
+        <h3 class="mb-4 text-xl font-semibold">Sumber Daya</h3>
+        <div class="flex flex-col gap-y-4">
+          <p>Teknologi</p>
+          <p>Desain</p>
+          <p>Dokumentasi</p>
+          <p>Studi Kasus</p>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="./js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 </body>
 
 </html>
