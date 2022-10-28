@@ -1,0 +1,39 @@
+1. Masalah yang Ada di Kesehatan Indonesia: Ketidakefektifan sistem pelayanan kesehatan masyarakat di Indonesia.
+
+2. Masalah yang Ada di Kesehatan Indonesia: Kurangnya informasi tentang ketersediaan rawat inap, dokter jaga, serta fasilitas yang ada di suatu rumah sakit.
+
+3. Masalah yang Ada di Kesehatan Indonesia: Masyarakat kurang mendapatkan edukasi tentang kesehatan.
+
+4. Beruntung ...
+   a. https://wearesocial.com/wp-content/uploads/sites/2/2022/01/02-Global-headlines-DataReportal-20220124-Digital-2022-Global-Overview-Report-v01-Slide-9-1024x576-1-1.png
+
+5. Perkenalkan SkyHealer!
+   a. https://drive.google.com/file/d/18XDfz8yfebt1YryOKiDQxdRSBt4_bcLV/view?usp=sharing
+
+6. Tujuan Utama
+   a. Dapat mengurangi waktu tunggu pasien ketika pergi berobat ke rumah
+sakit atau berkonsultasi ke dokter.
+   b. Dapat memberikan informasi yang jelas kepada pasien terkait dengan
+fasilitas, ketersediaan rawat inap, hingga dokter jaga yang ada di suatu
+rumah sakit tertentu.
+   c. Dapat memberikan edukasi kepada masyarakat seputar kesehatan.
+
+7. Fitur Utama SkyHealer
+   a. Cari Dokter
+   b. Cari Rumah Sakit
+   c. Artikel
+
+8. Keunikan Aplikasi SkyHealer
+   a. Tampilan Minimalis
+   b. Fitur Sederhana
+   c. Mendukung Semua Perangkat
+
+9. Teknologi yang Digunakan
+   a. HTML
+   b. Tailwind CSS
+   c. JavaScript
+   d. VSCode
+   e. GitHub
+   f. Figma
+   g. Firebase
+

@@ -1,0 +1,57 @@
+<!-- 
+  Source Gambar: Plugin Unsplash Figma (tidak terdapat link)
+  Icon: Vuesax Community File Figma (tidak terdapat link)
+-->
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sky Healer: Login</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./assets/logo.svg" />
+  </head>
+
+  <body class="font-poppins">
+    <section>
+      <div class="relative flex p-8">
+        <div class="hidden basis-2/4 items-center justify-center rounded-default bg-primary py-48 px-10 sm:flex xl:py-56 xl:px-14">
+          <img class="w-full" src="./assets/login-register.svg" alt="" />
+        </div>
+        <div class="z-50 flex basis-full justify-center sm:basis-2/4">
+          <div class="w-full sm:w-auto">
+            <a href="./index.html">
+              <img class="mb-12" width="50" src="./assets/logo.svg" alt="" />
+            </a>
+            <div class="mb-10">
+              <h1 class="text-3xl font-semibold lg:text-[48px]">Login</h1>
+              <p class="text-textgrey text-base lg:text-lg">Selamat datang kembali!</p>
+            </div>
+            <form action="">
+              <div class="mb-5 flex flex-col">
+                <label id="email" for="email" class="mb-2 text-lg text-primary">Email</label>
+                <input type="email" class="max-w-[380px] rounded-default bg-[#F4F8FF] p-5 transition-all duration-150 ease-linear focus:outline-none focus:ring-1 focus:ring-primary lg:w-[380px]" />
+              </div>
+              <div class="mb-5 flex flex-col">
+                <label for="password" class="mb-2 text-lg text-primary">Password</label>
+                <input type="password" class="max-w-[380px] rounded-default bg-[#F4F8FF] p-5 transition-all duration-150 ease-linear focus:outline-none focus:ring-1 focus:ring-primary lg:w-[380px]" />
+              </div>
+              <div class="mt-12 flex flex-col gap-y-5">
+                <button class="hover:shadow-textgrey w-full rounded-default bg-primary p-5 text-lg text-white shadow-lg transition duration-300 hover:scale-105">Login</button>
+                <button class="hover:shadow-textgrey flex w-full justify-center gap-x-4 rounded-default border border-primary p-5 text-lg shadow-lg transition duration-300 hover:scale-105">
+                  <img src="./assets/sosial-media/google.svg" alt="" />Login Dengan Google
+                </button>
+                <p class="text-center">Belum punya akun? <a href="./register.html" class="border-b border-primary text-primary">Daftar</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
