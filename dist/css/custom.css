@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ====================================================== Header ==================================================== */
+header.sticky{
+    top: 0;
+}
+.active::after{
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: #0957DE;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.sm-active::after{
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: #0957DE;
+    position: absolute;
+    top: 50%;
+    left: 120%;
+    transform: translate(-50%,-50%);
+}
+
+.humburger{
+    width: 30px;
+    height: 30px;
+}
+.humburger::before{
+    content: '';
+    width: 100%;
+    height: 2.5px;
+    position: absolute;
+    background: #0957DE;
+    transform: translateY(0px);
+    transition: 0.2s;
+}
+.humburger .line{
+    width: 70%;
+    height: 2.5px;
+    background: #0957DE;
+    position: absolute;
+    transform: translateY(10px);
+    transition: 0.2s;
+}
+.humburger::after{
+    content: '';
+    width: 100%;
+    height: 2.5px;
+    position: absolute;
+    background: #0957DE;
+    transform: translateY(20px);
+    transition: 0.2s;
+}
+.humburger.on::before{
+    transform: translateY(10px) rotate(-45deg);
+}
+.humburger.on .line{
+    width: 100%;
+    transform: translateY(10px) rotate(45deg);
+}
+.humburger.on::after{
+    width: 0%;
+    transform: translateY(10px) rotate(45deg);
+}
+#sidebar{
+    backdrop-filter: blur(10px);
+    transition: cubic-bezier(0.65, 0.05, 0.36, 1) all 0.5s;
+}
+#sidebar.on{
+    left: 0;
+}
+
+/* ====================================================== Fitur kami ====================================================== */
+.card-fitur{
+    width: 360px;
+    height: 320px;
+}
+.card-fitur:hover div svg path{
+    stroke: #FFFFFF;
+}
+.card-fitur:hover div h1{
+    color: #FFFFFF;
+}
+
+
+/* ====================================================== Artikel ====================================================== */
+.img-artikel1{
+    background-image: url(../image/rokok.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-artikel2{
+    background-image: url(../image/sakitleher.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-artikel3{
+    background-image: url(../image/covid.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-lainnya1{
+    background-image: url(../image/infus.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-lainnya2{
+    background-image: url(../image/vitaminD.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-lainnya3{
+    background-image: url(../image/bakteri.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ====================================================== Responsive ====================================================== */
+@media screen and (max-width : 450px){
+    .card-fitur{
+        width: 340px ;
+        height: 300px ;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    
+}
