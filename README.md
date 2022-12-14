@@ -1,7 +1,5 @@
-#### 🏆 This Project Won the 1st Runner-Up Award in the Web Design INVENTION 2022 Competition at Udayana University 🏆
-
 # Sky Healer
-SkyHealer is a web-based application that allows patients to do consultations with doctors and book rooms in a hospital. To see the results of this website, you can click [here](https://sky-healer.web.app/).
+SkyHealer is a web-based application that allows patients to do consultations with doctors and book rooms in a hospital. This project won the 1st runner-up award in the web design INVENTION 2022 competition at Udayana University. To see the results of this website, you can click [here](https://sky-healer.web.app/).
 
 ### Objectives
 - Reduce the patient waiting time when going home for treatment sick or consult a doctor.
